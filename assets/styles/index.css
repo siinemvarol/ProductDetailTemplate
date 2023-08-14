@@ -1,0 +1,137 @@
+:root{
+    --old-price: #a7a7a7;
+    --product-name: #222529;
+    --top-description: #777;
+    --white: #ffffff;
+    --poppins: "Poppins";
+    --roboto: "Roboto";
+    --opensans: "OpenSans";
+    --bottom-description: #7b858a;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--roboto), sans-serif;
+}
+
+.product {
+    display: flex;
+    padding: 0 50px;
+}
+
+.big-photo {
+    height: 378px;
+    width: 378px;
+    overflow: hidden;
+    padding: 40px 50px;
+}
+
+.small-photos{
+    display: flex;
+    overflow-x: auto;
+    width: 478px; /*calc(25% - 14px);*/
+    height: 88px;
+    gap: 10px;
+}
+.details{
+    padding: 20px 30px;
+}
+
+
+.details-top{
+    display: flex;
+    justify-content: space-between;
+}
+.product-name h1{
+    font-weight: 700;
+    color: var(--product-name);
+}
+
+.price {
+    display: flex;
+    gap: 10px;
+    font-family: var(--poppins), sans-serif;
+    align-items: center;
+    padding: 15px 0;
+}
+.old-price{
+    color: var(--old-price);
+    text-decoration: line-through;
+    font-weight: 600;
+    font-size: 20px;
+}
+.current-price{
+    font-weight: 600;
+    font-size: 24px;
+}
+.top-description{
+    font-family: var(--poppins), sans-serif;
+    color: var(--top-description);
+    font-size: 17px;
+
+}
+.category p{
+    color: var(--top-description);
+    font-size: 14px;
+}
+
+.cart{
+    display: flex;
+    padding: 15px 0;
+}
+.btn-add-to-cart{
+    height: 32px;
+    width: 120px;
+    color: var(--white);
+    border-color: var(--product-name);
+    background-color: var(--product-name);
+}
+
+.icons{
+    padding: 15px 0;
+}
+.icons img{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.description{
+    padding: 0 50px;
+}
+.description h5{
+    font-family: var(--poppins), sans-serif;
+    font-size: 16px;
+}
+.description p {
+    font-family: var(--opensans), sans-serif;
+    color: var(--bottom-description);
+    font-size: 15px;
+}
+.related{
+    padding: 0 50px;
+}
+.related h2{
+    font-family: var(--poppins), sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.related-products {
+    display: flex;
+    overflow-x: auto; 
+    gap: 20px;  
+    justify-content: space-around;
+}
+.related-product{
+    height: 300px;
+    width: 200px;
+    background-color: var(--top-description);
+   
+}
